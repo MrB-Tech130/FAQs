@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(to bottom, hotpink 50%, whitesmoke 50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .card {
+        background-color: white;
+        width: 300px;
+        padding: 60px 20px 20px 20px;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px lightgray;
+        text-align: center;
+        position: relative;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: 2px solid white;
+        position: absolute;
+        top: -40px;
+        /* left: 50px; */
+        transform: translateX(-50px);
+    }
+
+    .top-row {
+        display: flex;
+        /* grid-template-columns: 1fr 1fr; */ 
+        top: 20px;
+        right: 20px;
+        left: 20px;
+        justify-content: space-between;
+        position: absolute;
+        color: hotpink;
+        font-size: 12px;
+        margin-bottom: 15px;
+        /* padding: 0 10px; */
+        box-sizing: border-box;
+    }
+
+    .location {
+        color: gray;
+        font-size: 12px;
+    }
+
+    .job {
+        color: dimgray;
+        font-size: 13px;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+        color: gray;
+        font-size: 16px;
+    }
+
+    .stats strong {
+        color: black;
+        font-size: 16px;
+    }
+
+    button {
+        background: linear-gradient(to right, hotpink, pink);
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 20px;
+        font-size: 14px;
+        cursor: pointer;
+        /* margin-top: 50px; */
+        /* margin-right: 10px; */
+        margin: 20px auto 0;
+        display: block;
+    }
+</style>
+
+<body>
+    <div class="card">
+        <img src="./IMG-20260831-WA0023.jpg" alt="profile" class="avatar">
+        <div class="top-row">
+            <span>connect</span>
+            <span>message</span>
+        </div>
+        <h2>Mr B</h2>
+        <p class="location">New york, United state</p>
+        <p class="job">Web Producer - Web specialist <br> SQI college of ICT - Mosho</p>
+        <div class="stats">
+            <div><strong>65</strong><br>Friends</div>
+            <div><strong>43</strong><br>Photos</div>
+            <div><strong>21</strong><br>commenets</div>
+        </div>
+         <button>show more</button>
+    </div>
+</body>
+
+</html>
